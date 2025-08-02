@@ -6,30 +6,40 @@ const About = () => {
     <section id="about">
       <div className="container">
         <div className="about">
-          <h1>About Us</h1>
+          <h1>Launch Your CubeSat Journey with NSY</h1>
           <div className="about-content">
-            <img src={about} alt="img" />
+            <img src={about} alt="CubeSat" />
             <div className="content">
               <p>
-                Nano Satellite Yard (NSY) is a forward-thinking startup,
-                established in January 2024 as a limited liability company.
+                At <strong>Nano Satellite Yard (NSY)</strong>, we help universities, students, and researchers design, build, and launch a complete CubeSat in under one year — from concept to orbit.
               </p>
               <p>
-                We specialize in CubeSat technology, offering comprehensive
-                technical support alongside the design and manufacturing of
-                critical components such as Electrical Power Systems (EPS)
-                boards.
+                Founded in January 2024, NSY is a forward-thinking startup specializing in CubeSat technology and space solutions. Here's what we offer:
               </p>
+              <ul>
+                <li>Custom design and manufacturing of key subsystems like EPS (Electrical Power Systems)</li>
+                <li>Full technical support throughout the CubeSat development cycle</li>
+                <li>Advanced solar energy and UPS system solutions</li>
+                <li>Hands-on training in electronics and mechanical design</li>
+              </ul>
               <p>
-                Beyond space technology, we also innovate in solar energy
-                solutions, Uninterruptible Power Supply (UPS) systems, and
-                deliver expert-led courses in electronics and mechanical design.
+                Our mission is to empower the next generation of engineers and innovators by providing accessible, high-quality space technology and real-world engineering solutions.
               </p>
-              <p>
-                Our mission is to empower innovators and engineers by providing
-                sustainable solutions and technical expertise that excel in both
-                space exploration and practical, everyday applications.
-              </p>
+              <button
+                onClick={() => window.location.href = "#contact"}
+                style={{
+                  marginTop: '20px',
+                  padding: '10px 20px',
+                  fontSize: '16px',
+                  backgroundColor: '#007BFF',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: '5px',
+                  cursor: 'pointer'
+                }}
+              >
+                Book a Free Consultation
+              </button>
             </div>
           </div>
         </div>

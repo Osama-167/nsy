@@ -8,38 +8,40 @@ const Hero = () => {
       <div className="hero container">
         <div className="hero-content">
           <div className="content">
-            <h1>NANO SATELLITE YARD</h1>
-            <p>“A tiny box that enhances our vision of the Earth.”</p>
+            <h1>
+              Build & Launch Your Own <span style={{ color: '#007BFF' }}>CubeSat</span>
+            </h1>
+            <p>
+              We help students, researchers, and universities design, build, and launch CubeSats — from idea to orbit — in less than a year.
+            </p>
             <Link to="contact" smooth={true} duration={500}>
               <button>
-                Contact Us <Send />
+                Get Started <Send />
               </button>
             </Link>
           </div>
           <div className="img">
-            <img src={image} alt="Hero img" />
+            <img src={image} alt="Hero" />
           </div>
         </div>
+
         <div className="hero-cards">
           <div className="card">
             <h3>Project Development</h3>
             <p>
-              We help you develop innovative solutions to address pressing
-              challenges.
+              Turn your satellite idea into a full mission plan — we guide you every step of the way.
             </p>
           </div>
           <div className="card">
             <h3>Technical Support</h3>
             <p>
-              We provide expertise in nanotechnology and assist you with your
-              projects.
+              Our experts support your CubeSat design, testing, and system integration with hands-on advice.
             </p>
           </div>
           <div className="card">
-            <h3>Research & Development</h3>
+            <h3>R&D and Training</h3>
             <p>
-              We focus on developing new technologies and solutions for the
-              future.
+              Explore new technologies and gain practical skills through our space-focused training programs.
             </p>
           </div>
         </div>
@@ -47,4 +49,5 @@ const Hero = () => {
     </section>
   )
 }
+
 export default Hero
