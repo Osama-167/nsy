@@ -11,6 +11,15 @@ import About from './components/About'
 import CEO from './components/CEO'
 import NewCEO from './components/NewCEO'
 import Services from './components/Services'
+import Testimonials from './components/Testimonials'
+import HowItWorks from './components/HowItWorks'
+import FAQ from './components/FAQ'
+import WhyNSY from "./components/WhyNSY"; 
+import Certificates from "./components/Certificates"; 
+
+
+
+
 
 function App() {
   return (
@@ -19,7 +28,13 @@ function App() {
       <Hero />
       <About />
       <Services />
-      <CEO />
+      <Testimonials />
+      <HowItWorks />
+       <FAQ />
+       <WhyNSY />
+       <Certificates />
+
+      {/* <CEO /> */}
       <NewCEO />
       <Contact />
       <Footer />

@@ -619,3 +619,427 @@ footer h3 {
 
 @media only screen and (min-width: 1200px) {
 }
+
+/* ####### Testimonials ######## */
+
+.testimonials-section {
+  background-color: #f8f9fa; /* زي لون services */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial-box {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.testimonial-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-position {
+  font-size: 14px;
+  color: #777;
+  margin: 4px 0;
+}
+
+.testimonial-message {
+  font-style: italic;
+  margin-top: 8px;
+  color: #444;
+}
+
+
+
+/* ####### HowItWorks ######## */
+
+.how-it-works-container {
+  background-color: #0f0f2e;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  margin-top: 80px; 
+}
+
+.how-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #08b8db;
+}
+
+.how-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.step-card {
+  background-color: #19193a; 
+  border-radius: 20px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.step-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover .step-img {
+  transform: scale(1.08);
+}
+
+.step-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #08b8db;
+}
+
+.step-card p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+
+
+/* FAQ Section */
+.faq-section {
+  padding: 60px 20px;
+  background-color: #0d1117; 
+  color: #f1f1f1;
+  border-top: 1px solid #1f1f1f;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: #161b22;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #2a2f36;
+}
+
+.faq-item:hover {
+  background-color: #1e252d;
+}
+
+.faq-question {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.faq-item.open .faq-question::after {
+  content: "▲";
+  float: left;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.faq-question::after {
+  content: "▼";
+  float: left;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+
+/* ============= Unified Sections Styling ============= */
+.why-nsy-page,
+.certificates-page,
+.demo-video-section,
+.faq-section,
+.how-it-works-container {
+  background-color: #12122b;
+  color: #f1f1f1;
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* ============= Shared Headings ============= */
+.why-nsy-page h2,
+.certificates-page h2,
+.demo-video-section h2,
+.faq-section h2,
+.how-it-works-container h2,
+.page-title {
+  color: #08b8db;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+}
+
+.why-nsy-page h2:after,
+.certificates-page h2:after,
+.demo-video-section h2:after,
+.faq-section h2:after,
+.how-it-works-container h2:after,
+.page-title:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #08b8db;
+  margin: 15px auto 0;
+}
+
+/* ============= Shared Subheadings ============= */
+.why-nsy-page h3,
+.certificates-page h3 {
+  color: #b2ebf2;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ============= Shared Content Cards ============= */
+.why-nsy-page .section-box,
+.certificates-section,
+.collaborators-section,
+.faq-item,
+.step-card {
+  background-color: #1c1c3b;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 0 auto 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  max-width: 1200px;
+}
+
+/* ============= Video Section ============= */
+.demo-video-section {
+  text-align: center;
+}
+
+.video-text p {
+  color: #dddddd;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.video-container {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.nsy-video {
+  width: 100%;
+  display: block;
+}
+
+/* ============= Certificates Section ============= */
+.certificates-section, 
+.collaborators-section {
+  text-align: center;
+  padding: 30px;
+}
+
+.logos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.logos-grid img {
+  width: 200px;
+  height: 130px;
+  object-fit: contain;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e1e1e1;
+}
+
+.logos-grid img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,212,255,0.3);
+}
+
+/* ============= FAQ Section ============= */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #f1f1f1;
+  cursor: pointer;
+  padding: 15px;
+  background: #252545;
+  border-radius: 8px;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  padding: 15px;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+/* ============= How It Works Section ============= */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.step-card {
+  text-align: center;
+  padding: 30px;
+}
+
+.step-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.step-card h3 {
+  color: #08b8db;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+/* ============= Buttons ============= */
+.cta-button,
+.more-button {
+  background-color: #08b8db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.cta-button:hover,
+.more-button:hover {
+  background-color: #00a3c4;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,212,255,0.3);
+}
+
+/* ============= Responsive Adjustments ============= */
+@media (max-width: 768px) {
+  .why-nsy-page,
+  .certificates-page,
+  .demo-video-section,
+  .faq-section,
+  .how-it-works-container {
+    padding: 40px 15px;
+  }
+  
+  .logos-grid img {
+    width: 150px;
+    height: 100px;
+    padding: 15px;
+  }
+  
+  .step-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logos-grid {
+    gap: 20px;
+  }
+  
+  .logos-grid img {
+    width: 120px;
+    height: 80px;
+    padding: 10px;
+  }
+  
+  .why-nsy-page h2,
+  .certificates-page h2,
+  .demo-video-section h2,
+  .faq-section h2,
+  .how-it-works-container h2,
+  .page-title {
+    font-size: 1.6rem;
+  }
+}
